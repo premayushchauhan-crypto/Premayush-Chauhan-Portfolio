@@ -1,20 +1,29 @@
+*{
+box-sizing:border-box;
+}
+
 body{
 font-family: Arial;
 margin:0;
 padding:0;
 line-height:1.6;
+background:#eef2f7;
 }
 
 nav{
-background:#111;
-position:sticky;
+position: sticky;
 top:0;
+background:#222;
+padding: 15px 40px;
+display: flex;
+align-items: center;
 z-index:1000;
 }
 
 nav ul{
 display:flex;
 justify-content:center;
+flex: 1;
 list-style:none;
 margin:0;
 padding:10px;
@@ -27,17 +36,78 @@ margin:0 20px;
 nav ul li a{
 color:white;
 font-weight:bold;
+transition:0.3s;
 }
 
 nav ul li a:hover{
-color:#00c3ff;
+color:#00c6ff;
 }
 
-header{
-background:#222;
+.logo{
 color:white;
-text-align:center;
-padding:40px;
+font-size:20px;
+font-weight:bold;
+}
+
+.nav-icons a{
+color:white;
+font-size:22px;
+transition:0.3s;
+}
+
+.nav-icons a:hover{
+color:#00c6ff;
+}
+
+.hero{
+  background: linear-gradient(135deg,#0077ff,#00c6ff);
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero-content{
+  max-width:800px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:20px;
+  line-height:1.6;
+}
+
+.hero-buttons{
+  margin-top:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  margin:10px;
+  background:white;
+  color:#0077ff;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn-dark{
+  background:#222;
+  color:white;
+}
+
+.btn-dark:hover{
+  background:#000;
 }
 
 section{
@@ -147,6 +217,8 @@ background:#f4f7fb;
 display:flex;
 flex-wrap:wrap;
 gap:15px;
+justify-content:center;
+padding:0;
 }
 
 .skills-list li{
@@ -155,6 +227,11 @@ color:white;
 padding:8px 15px;
 border-radius:20px;
 list-style:none;
+transition:0.3s;
+}
+
+.skills-list li:hover{
+transform:scale(1.05);
 }
 
 footer{
@@ -202,4 +279,42 @@ text-decoration:underline;
 .contact-box:hover{
 transform:translateY(-5px);
 transition:0.3s;
+}
+
+.footer-links{
+margin-top:10px;
+}
+
+.footer-links a{
+color:white;
+margin:0 10px;
+font-size:20px;
+}
+
+.about-highlights{
+margin-top:20px;
+padding-left:0;
+list-style:none;
+}
+
+.about-highlights li{
+margin:8px 0;
+font-size:17px;
+}
+
+#learning{
+background:white;
+}
+
+.learning-box{
+background:#f4f7fb;
+padding:25px;
+border-radius:10px;
+line-height:1.8;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.learning-box p{
+margin:10px 0;
+font-size:17px;
 }
